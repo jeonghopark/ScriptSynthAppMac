@@ -10,7 +10,7 @@ void ofApp::setup(){
     ofSetFrameRate(60);
     
 	plotHeight = 128;
-    bufferSize = 1024;
+    bufferSize = 512;
 
  	ofSoundStreamSetup(2,0,this, 44100, bufferSize, 4);
    
@@ -18,7 +18,7 @@ void ofApp::setup(){
 	middleBuffer.resize(bufferSize);
 	audioBuffer.resize(bufferSize);
 
-    spectrogram.allocate(bufferSize, 256, OF_IMAGE_GRAYSCALE);
+    spectrogram.allocate(bufferSize*2, 256, OF_IMAGE_GRAYSCALE);
 	memset(spectrogram.getPixels(), 0, (int) (spectrogram.getWidth() * spectrogram.getHeight()) );
 	spectrogramOffset = 0;
 
@@ -44,7 +44,7 @@ void ofApp::draw() {
 	ofSetColor(255);
 	ofPushMatrix();
 	ofTranslate(0, 0);
-	ofDrawBitmapString("Time Domain", 0, 0);
+//	ofDrawBitmapString("Time Domain", 0, 0);
 	
 	soundMutex.lock();
 	drawBuffer = middleBuffer;
@@ -59,7 +59,7 @@ void ofApp::draw() {
 	ofTranslate(0, plotHeight);
 	spectrogram.update();
 	spectrogram.draw(0, 0);
-	ofRect(0, 0, bufferSize, bufferSize / 4);
+//	ofRect(0, 0, bufferSize, bufferSize / 4);
 //	ofDrawBitmapString("Spectrogram", 0, 0);
 	ofPopMatrix();
 	string msg = ofToString((int) ofGetFrameRate()) + " fps";
@@ -91,8 +91,8 @@ void ofApp::exit(){
 void ofApp::audioRequested(float *output, int Buffersize, int nChannels){
     
     
-    float _fq = 55;
-    float _volume = 0.1;
+    float _fq = 22.5;
+    float _volume = 0.5;
     double _t1;
     
     
