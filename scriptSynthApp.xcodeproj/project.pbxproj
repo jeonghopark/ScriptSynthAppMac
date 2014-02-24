@@ -22,6 +22,7 @@
 		A1C54DF7C5675F9F4562D0B2 /* maxiMFCC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 518EFA0C67EB692E513C73D5 /* maxiMFCC.cpp */; };
 		A2FF4899D5D4ABC5DCB70BEF /* maximilian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4DE938BE6119D9983964E43E /* maximilian.cpp */; };
 		A842778C18AEBE2600C65DB9 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A842778A18AEBE1F00C65DB9 /* Accelerate.framework */; };
+		A8A3903318AFABD80044A932 /* scriptSynthAppIcon_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A8A3903218AFABD80044A932 /* scriptSynthAppIcon_icon.png */; };
 		B748745C2728FC0A33539435 /* maxiAtoms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4ACCAD93694FB1650AA6AC8 /* maxiAtoms.cpp */; };
 		BB16EBD20F2B2A9500518274 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB16EBD10F2B2A9500518274 /* OpenGLES.framework */; };
 		BB16EBD90F2B2AB500518274 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB16EBD80F2B2AB500518274 /* QuartzCore.framework */; };
@@ -84,6 +85,7 @@
 		8A8C849D1E761F9B38FB5730 /* maxiFFT.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = maxiFFT.h; path = ../../../openFrameworks_ios/addons/ofxMaxim/libs/maxiFFT.h; sourceTree = SOURCE_ROOT; };
 		A4ACCAD93694FB1650AA6AC8 /* maxiAtoms.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = maxiAtoms.cpp; path = ../../../openFrameworks_ios/addons/ofxMaxim/libs/maxiAtoms.cpp; sourceTree = SOURCE_ROOT; };
 		A842778A18AEBE1F00C65DB9 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		A8A3903218AFABD80044A932 /* scriptSynthAppIcon_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = scriptSynthAppIcon_icon.png; path = bin/data/scriptSynthAppIcon_icon.png; sourceTree = "<group>"; };
 		B6CF0A331FB4E6AD4F3A697B /* fft.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = fft.h; path = ../../../openFrameworks_ios/addons/ofxMaxim/libs/fft.h; sourceTree = SOURCE_ROOT; };
 		BB16EBD10F2B2A9500518274 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BB16EBD80F2B2AB500518274 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -141,6 +143,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				A8A3903218AFABD80044A932 /* scriptSynthAppIcon_icon.png */,
 				678E130917951536005B6D19 /* Icon.png */,
 				678E130717951530005B6D19 /* Icon@2x.png */,
 				678E130B1795153C005B6D19 /* Default.png */,
@@ -298,6 +301,15 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						SystemCapabilities = {
+							com.apple.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "scriptSynthApp" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -342,6 +354,7 @@
 				E41D3ED713B38FB500A75A5D /* Project.xcconfig in Resources */,
 				E41D3EE613B3906D00A75A5D /* CoreOF.xcconfig in Resources */,
 				678E130817951530005B6D19 /* Icon@2x.png in Resources */,
+				A8A3903318AFABD80044A932 /* scriptSynthAppIcon_icon.png in Resources */,
 				678E130A17951536005B6D19 /* Icon.png in Resources */,
 				678E130C1795153C005B6D19 /* Default.png in Resources */,
 				678E130E17951540005B6D19 /* Default@2x.png in Resources */,

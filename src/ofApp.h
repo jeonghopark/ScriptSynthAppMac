@@ -27,17 +27,21 @@ public:
     
     void audioRequested(float * output, int Buffersize, int nChannels);
     
-    ofxMaxiOsc tone1;
+    ofxMaxiOsc tone1, tone2;
     
     float touchMovY;
     
     float parameter1, parameter2, parameter3, parameter4, parameter5;
+    float secondParameter1, secondParameter2, secondParameter3, secondParameter4, secondParameter5;
     
-    double * testFQdraw;
-  
+    int spectrogramWidth, spectrogramWidth2;
+
 	ofMutex soundMutex;
     vector<float> drawBuffer, middleBuffer, audioBuffer;
     vector<float> drawBins, middleBins, audioBins;
+
+    vector<float> drawBuffer2, middleBuffer2, audioBuffer2;
+    vector<float> drawBins2, middleBins2, audioBins2;
 
 	int plotHeight, bufferSize;
 
@@ -46,6 +50,14 @@ public:
     int spectrogramOffset;
 	ofImage spectrogram;
 
+    int spectrogramOffset2;
+	ofImage spectrogram2;
+
+    
+    ofxMaxiMix mix;
+    
+    vector<int> spectrum1PosX, spectrum2PosX;
+    
 };
 
 
