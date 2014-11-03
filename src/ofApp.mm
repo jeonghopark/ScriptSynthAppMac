@@ -20,7 +20,7 @@ void ofApp::setup(){
 	plotHeight = 128*2;
     bufferSize = 512;
 
- 	ofSoundStreamSetup(2,0,this, 44100, bufferSize, 4);
+ 	ofSoundStreamSetup( 2, 0, this, 44100, bufferSize, 4 );
    
     drawBuffer_0.resize(bufferSize);
 	middleBuffer_0.resize(bufferSize);
@@ -34,12 +34,12 @@ void ofApp::setup(){
     middleBuffer_2.resize(bufferSize);
 	audioBuffer_2.resize(bufferSize);
 
-    spectrogram.allocate(bufferSize*2, plotHeight, OF_IMAGE_GRAYSCALE);
-	memset(spectrogram.getPixels(), 0, (int) (spectrogram.getWidth() * spectrogram.getHeight()) );
+    spectrogramUP.allocate(bufferSize*2, plotHeight, OF_IMAGE_GRAYSCALE);
+	memset(spectrogramUP.getPixels(), 0, (int) (spectrogramUP.getWidth() * spectrogramUP.getHeight()) );
 	spectrogramOffset = 0;
 
-    spectrogram2.allocate(bufferSize*2, plotHeight, OF_IMAGE_GRAYSCALE);
-	memset(spectrogram2.getPixels(), 0, (int) (spectrogram2.getWidth() * spectrogram2.getHeight()) );
+    spectrogramDN.allocate(bufferSize*2, plotHeight, OF_IMAGE_GRAYSCALE);
+	memset(spectrogramDN.getPixels(), 0, (int) (spectrogramDN.getWidth() * spectrogramDN.getHeight()) );
 	spectrogramOffset2 = 0;
 
     touchMovY = ofGetHeight()/2;
@@ -98,14 +98,14 @@ void ofApp::draw() {
     ofSetColor(255, 255);
 	ofPushMatrix();
 	ofTranslate(0, ofGetHeight()/2-plotHeight - 5);
-	spectrogram.update();
-	spectrogram.draw(0, 0);
+	spectrogramUP.update();
+	spectrogramUP.draw(0, 0);
 	ofPopMatrix();
 
 	ofPushMatrix();
 	ofTranslate(0, ofGetHeight()/2 + 5);
-	spectrogram2.update();
-	spectrogram2.draw(0, 0);
+	spectrogramDN.update();
+	spectrogramDN.draw(0, 0);
 	ofPopMatrix();
     
 }
@@ -155,16 +155,16 @@ void ofApp::audioRequested(float *output, int Buffersize, int nChannels){
         float _changeAble = ofMap( touchMovY, 0, ofGetHeight(), 0, _fq*30 ) * parameter3;
         float _changeAble2 = ofMap( touchMovY, 0, ofGetHeight(), 0, _fq2*30 ) * secondParameter3;
         
-//        _t1 = tone1.sinewave( tone0.sinewave(_fq0*_changeAble * 0.1) ) * tone1.sinewave(_fq*_changeAble * 0.07) + tone1.phasor(_fq*_changeAble * 0.07) * _volume;
-//
-//        _t2 = tone2.sinewave(_fq2*_changeAble2 * 0.1) * tone2.sinewave(_fq2*_changeAble2 * 0.05) * _volume2;
+        _t1 = tone1.sinewave( tone0.sinewave(_fq0*_changeAble * 0.1) ) * tone1.sinewave(_fq*_changeAble * 0.07) + tone1.phasor(_fq*_changeAble * 0.07) * _volume;
+
+        _t2 = tone2.sinewave(_fq2*_changeAble2 * 0.1) * tone2.sinewave(_fq2*_changeAble2 * 0.05) * _volume2;
         
 
-        _t1 = tone0.saw( scale1 ) + tone2.sinewave( scale1 );
+//        _t1 = tone0.saw( scale1 ) + tone2.sinewave( scale1 );
         audioBuffer_1[i] = _t1;
 
 //        _t2 = tone2.sinewave( scale2 );
-//        audioBuffer_2[i] = _t2;
+        audioBuffer_2[i] = _t2;
         
         double _output = ( _t1 ) * 0.5;
         
@@ -191,9 +191,9 @@ void ofApp::audioRequested(float *output, int Buffersize, int nChannels){
 	}
 
 
-    spectrogramWidth = (int) spectrogram.getWidth();
-	int n = (int) spectrogram.getHeight();
-	unsigned char* pixels = spectrogram.getPixels();
+    spectrogramWidth = (int) spectrogramUP.getWidth();
+	int n = (int) spectrogramUP.getHeight();
+	unsigned char* pixels = spectrogramUP.getPixels();
 	for(int i = 0; i < n; i++) {
 		int j = (n - i - 1) * spectrogramWidth + spectrogramOffset;
 		int logi = ofMap(powFreq(i), powFreq(0), powFreq(n), 0, n);
@@ -201,9 +201,9 @@ void ofApp::audioRequested(float *output, int Buffersize, int nChannels){
 	}
 	spectrogramOffset = (spectrogramOffset + 1) % spectrogramWidth;
 
-    spectrogramWidth2 = (int) spectrogram2.getWidth();
-	int n2 = (int) spectrogram2.getHeight();
-	unsigned char* pixels2 = spectrogram2.getPixels();
+    spectrogramWidth2 = (int) spectrogramDN.getWidth();
+	int n2 = (int) spectrogramDN.getHeight();
+	unsigned char* pixels2 = spectrogramDN.getPixels();
 	for(int i = 0; i < n2; i++) {
 		int j = (n2 - i - 1) * spectrogramWidth2 + spectrogramOffset2;
 		int logi = ofMap(powFreq(i), powFreq(0), powFreq(n2), 0, n2);

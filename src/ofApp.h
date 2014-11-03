@@ -52,10 +52,10 @@ public:
     void plot(vector<float>& buffer, float scale, float offset);
 
     int spectrogramOffset;
-	ofImage spectrogram;
+	ofImage spectrogramUP;
 
     int spectrogramOffset2;
-	ofImage spectrogram2;
+	ofImage spectrogramDN;
 
     
     ofxMaxiMix mix;
