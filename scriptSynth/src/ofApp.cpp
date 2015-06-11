@@ -6,26 +6,19 @@
 //--------------------------------------------------------------
 void ofApp::setup(){	
 
-    ofSetOrientation(OF_ORIENTATION_90_RIGHT);
     ofSetFrameRate(60);
     
-    ofxAccelerometer.setup();               //accesses accelerometer data
-    ofxiPhoneAlerts.addListener(this);      //allows elerts to appear while app is running
-	ofRegisterTouchEvents(this);            //method that passes touch events
-
-    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
-
-    ofBackground(10, 255);
+    ofBackground(10);
     
 	plotHeight = 128*2;
     bufferSize = 512;
 
- 	ofSoundStreamSetup( 2, 0, this, 44100, bufferSize, 4 );
+    ofSoundStreamSetup( 2, 0, this, 44100, bufferSize, 4 );
    
     drawBuffer_0.resize(bufferSize);
 	middleBuffer_0.resize(bufferSize);
 	audioBuffer_0.resize(bufferSize);
-    
+
     drawBuffer_1.resize(bufferSize);
 	middleBuffer_1.resize(bufferSize);
 	audioBuffer_1.resize(bufferSize);
@@ -34,16 +27,17 @@ void ofApp::setup(){
     middleBuffer_2.resize(bufferSize);
 	audioBuffer_2.resize(bufferSize);
 
-    spectrogramUP.allocate(bufferSize*2, plotHeight, OF_IMAGE_GRAYSCALE);
+    spectrogramUP.allocate(ofGetWidth(), plotHeight, OF_IMAGE_GRAYSCALE);
 	memset(spectrogramUP.getPixels(), 0, (int) (spectrogramUP.getWidth() * spectrogramUP.getHeight()) );
 	spectrogramOffset = 0;
 
-    spectrogramDN.allocate(bufferSize*2, plotHeight, OF_IMAGE_GRAYSCALE);
+    spectrogramDN.allocate(ofGetWidth(), plotHeight, OF_IMAGE_GRAYSCALE);
 	memset(spectrogramDN.getPixels(), 0, (int) (spectrogramDN.getWidth() * spectrogramDN.getHeight()) );
 	spectrogramOffset2 = 0;
 
     touchMovY = ofGetHeight()/2;
     
+    fullscreen = false;
 }
 
 //--------------------------------------------------------------
@@ -131,10 +125,6 @@ void ofApp::plot(vector<float>& buffer, float scale, float offset) {
 }
 
 
-//--------------------------------------------------------------
-void ofApp::exit(){
-
-}
 
 void ofApp::audioRequested(float *output, int Buffersize, int nChannels){
     
@@ -225,51 +215,63 @@ void ofApp::audioRequested(float *output, int Buffersize, int nChannels){
 
 
 //--------------------------------------------------------------
-void ofApp::touchDown(ofTouchEventArgs & touch){
-
-}
-
-
-//--------------------------------------------------------------
-void ofApp::touchMoved(ofTouchEventArgs & touch){
-    if (touch.id==0) {
-        touchMovY = touch.y;
-    }
-}
-
-
-//--------------------------------------------------------------
-void ofApp::touchUp(ofTouchEventArgs & touch){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::touchDoubleTap(ofTouchEventArgs & touch){
-
-}
-
-//--------------------------------------------------------------
-void ofApp::touchCancelled(ofTouchEventArgs & touch){
+void ofApp::keyPressed(int key){
     
 }
 
 //--------------------------------------------------------------
-void ofApp::lostFocus(){
+void ofApp::keyReleased(int key){
+ 
+    if (key=='f') {
+        fullscreen = !fullscreen;
+        ofSetFullscreen(fullscreen);
+    }
+    
+}
+
+//--------------------------------------------------------------
+void ofApp::mouseMoved(int x, int y){
+    
+}
+
+
+//--------------------------------------------------------------
+void ofApp::mouseDragged(int x, int y, int button){
+
+    touchMovY = y;
+    
+}
+
+
+//--------------------------------------------------------------
+void ofApp::mousePressed(int x, int y, int button){
+    
+}
+
+//--------------------------------------------------------------
+void ofApp::mouseReleased(int x, int y, int button){
+    
+}
+
+//--------------------------------------------------------------
+void ofApp::windowResized(int w, int h){
+
+    spectrogramUP.allocate(ofGetWidth(), plotHeight, OF_IMAGE_GRAYSCALE);
+    memset(spectrogramUP.getPixels(), 0, (int) (spectrogramUP.getWidth() * spectrogramUP.getHeight()) );
+    spectrogramOffset = 0;
+    
+    spectrogramDN.allocate(ofGetWidth(), plotHeight, OF_IMAGE_GRAYSCALE);
+    memset(spectrogramDN.getPixels(), 0, (int) (spectrogramDN.getWidth() * spectrogramDN.getHeight()) );
+    spectrogramOffset2 = 0;
 
 }
 
 //--------------------------------------------------------------
-void ofApp::gotFocus(){
-
+void ofApp::gotMessage(ofMessage msg){
+    
 }
 
 //--------------------------------------------------------------
-void ofApp::gotMemoryWarning(){
-
+void ofApp::dragEvent(ofDragInfo dragInfo){
+    
 }
-
-//--------------------------------------------------------------
-void ofApp::deviceOrientationChanged(int newOrientation){
-
-}
-
