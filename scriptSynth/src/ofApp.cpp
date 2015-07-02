@@ -232,13 +232,14 @@ void ofApp::keyReleased(int key){
 //--------------------------------------------------------------
 void ofApp::mouseMoved(int x, int y){
     
+    touchMovY = y;
+
 }
 
 
 //--------------------------------------------------------------
 void ofApp::mouseDragged(int x, int y, int button){
 
-    touchMovY = y;
     
 }
 

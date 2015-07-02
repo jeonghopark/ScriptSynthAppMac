@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B8D89AB48122311B93D91A6 /* fft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 544AAA821451623BD53B2040 /* fft.cpp */; };
-		2F96571A277E0F48A3E9A085 /* maxiGrains.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC6F9137FA7EC92DEED7B861 /* maxiGrains.cpp */; };
-		33F9023993014C499210836F /* maxiAtoms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D3689C8C7F2585E1AB050D6 /* maxiAtoms.cpp */; };
-		56C0019531F823BC163D9BF0 /* stb_vorbis.c in Sources */ = {isa = PBXBuildFile; fileRef = 2B5D7123BFF1615BB0DD98F6 /* stb_vorbis.c */; };
-		850315DF2F561B95D8133952 /* maximilian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FF354E65E84585FB758EAB6 /* maximilian.cpp */; };
-		BCB5089D4361D1BE5D430A08 /* maxiMFCC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CB1110C1B4E3177C62F6071F /* maxiMFCC.cpp */; };
-		BE670F62749AAC95920E317F /* maxiFFT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2DE8EFAF24106AE2589236E8 /* maxiFFT.cpp */; };
+		2A95538B06B0C570B4B23703 /* fft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05A1EF6ADEE7F888AF520F73 /* fft.cpp */; };
+		2CFB370FCD7FB221006262D4 /* maxiAtoms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 919A1B58F8D589708390F312 /* maxiAtoms.cpp */; };
+		3D780B90416345AA3F935B38 /* maxiGrains.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 813997CD2B9EC6849FF18A31 /* maxiGrains.cpp */; };
+		60E12B84339A80C82C5949E6 /* maxiMFCC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A82AB3DA6187F91924D58ED /* maxiMFCC.cpp */; };
+		A8780A1D1B4595A600E99A94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8780A1B1B45952600E99A94 /* Images.xcassets */; };
+		BE710F5A03670182318E4071 /* stb_vorbis.c in Sources */ = {isa = PBXBuildFile; fileRef = 410A21A000CC72344E1632E7 /* stb_vorbis.c */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
 		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
+		F301ADA1FC9294BEA6D647C0 /* maximilian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8298F1957221E8DE107EAB4 /* maximilian.cpp */; };
+		F3A177C56696F6211A0673F1 /* maxiFFT.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8C57157B49C554BD4E9CA73 /* maxiFFT.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,30 +50,31 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		003884F4A6C65DCEED679EB5 /* maxiAtoms.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = maxiAtoms.h; path = ../../../openFrameworks/addons/ofxMaxim/libs/maxiAtoms.h; sourceTree = SOURCE_ROOT; };
-		03DAD8D9409CB9513CF5A52A /* stb_vorbis.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = stb_vorbis.h; path = ../../../openFrameworks/addons/ofxMaxim/libs/stb_vorbis.h; sourceTree = SOURCE_ROOT; };
-		2B5D7123BFF1615BB0DD98F6 /* stb_vorbis.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = stb_vorbis.c; path = ../../../openFrameworks/addons/ofxMaxim/libs/stb_vorbis.c; sourceTree = SOURCE_ROOT; };
-		2DE8EFAF24106AE2589236E8 /* maxiFFT.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = maxiFFT.cpp; path = ../../../openFrameworks/addons/ofxMaxim/libs/maxiFFT.cpp; sourceTree = SOURCE_ROOT; };
-		50663789A789CFE16D024317 /* maxiMFCC.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = maxiMFCC.h; path = ../../../openFrameworks/addons/ofxMaxim/libs/maxiMFCC.h; sourceTree = SOURCE_ROOT; };
-		544AAA821451623BD53B2040 /* fft.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = fft.cpp; path = ../../../openFrameworks/addons/ofxMaxim/libs/fft.cpp; sourceTree = SOURCE_ROOT; };
-		5EBDCC43E186C8F718B4A009 /* ofxMaxim.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxMaxim.h; path = ../../../openFrameworks/addons/ofxMaxim/src/ofxMaxim.h; sourceTree = SOURCE_ROOT; };
-		8D3689C8C7F2585E1AB050D6 /* maxiAtoms.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = maxiAtoms.cpp; path = ../../../openFrameworks/addons/ofxMaxim/libs/maxiAtoms.cpp; sourceTree = SOURCE_ROOT; };
-		9FF354E65E84585FB758EAB6 /* maximilian.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = maximilian.cpp; path = ../../../openFrameworks/addons/ofxMaxim/libs/maximilian.cpp; sourceTree = SOURCE_ROOT; };
-		AE049472FA96B7F13DC959F3 /* maxiGrains.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = maxiGrains.h; path = ../../../openFrameworks/addons/ofxMaxim/libs/maxiGrains.h; sourceTree = SOURCE_ROOT; };
-		AFD20231F56340DFA3AF0D62 /* fft.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = fft.h; path = ../../../openFrameworks/addons/ofxMaxim/libs/fft.h; sourceTree = SOURCE_ROOT; };
-		CB1110C1B4E3177C62F6071F /* maxiMFCC.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = maxiMFCC.cpp; path = ../../../openFrameworks/addons/ofxMaxim/libs/maxiMFCC.cpp; sourceTree = SOURCE_ROOT; };
-		D0C55A38BBE7A0ADC0BF9841 /* maxiFFT.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = maxiFFT.h; path = ../../../openFrameworks/addons/ofxMaxim/libs/maxiFFT.h; sourceTree = SOURCE_ROOT; };
-		D5965F3A596CBAE27E395B40 /* sineTable.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = sineTable.h; path = ../../../openFrameworks/addons/ofxMaxim/libs/sineTable.h; sourceTree = SOURCE_ROOT; };
-		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../openFrameworks/libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
-		E4B69B5B0A3A1756003C02F2 /* scriptSynthMacDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scriptSynthMacDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		05A1EF6ADEE7F888AF520F73 /* fft.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = fft.cpp; path = ../../../../openFrameworks/addons/ofxMaxim/libs/fft.cpp; sourceTree = SOURCE_ROOT; };
+		0A82AB3DA6187F91924D58ED /* maxiMFCC.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = maxiMFCC.cpp; path = ../../../../openFrameworks/addons/ofxMaxim/libs/maxiMFCC.cpp; sourceTree = SOURCE_ROOT; };
+		1E318E69ADB9397C4463818E /* maximilian.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = maximilian.h; path = ../../../../openFrameworks/addons/ofxMaxim/libs/maximilian.h; sourceTree = SOURCE_ROOT; };
+		410A21A000CC72344E1632E7 /* stb_vorbis.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 30; name = stb_vorbis.c; path = ../../../../openFrameworks/addons/ofxMaxim/libs/stb_vorbis.c; sourceTree = SOURCE_ROOT; };
+		4B8759F20DB1BE805334F725 /* maxiFFT.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = maxiFFT.h; path = ../../../../openFrameworks/addons/ofxMaxim/libs/maxiFFT.h; sourceTree = SOURCE_ROOT; };
+		4C139CA6ECEB62D7B53D5E0E /* ofxMaxim.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxMaxim.h; path = ../../../../openFrameworks/addons/ofxMaxim/src/ofxMaxim.h; sourceTree = SOURCE_ROOT; };
+		509E168427F5ACB33D00EA68 /* maxiMFCC.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = maxiMFCC.h; path = ../../../../openFrameworks/addons/ofxMaxim/libs/maxiMFCC.h; sourceTree = SOURCE_ROOT; };
+		7FE3C35539CCE66D0B56AF6A /* maxiGrains.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = maxiGrains.h; path = ../../../../openFrameworks/addons/ofxMaxim/libs/maxiGrains.h; sourceTree = SOURCE_ROOT; };
+		813997CD2B9EC6849FF18A31 /* maxiGrains.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = maxiGrains.cpp; path = ../../../../openFrameworks/addons/ofxMaxim/libs/maxiGrains.cpp; sourceTree = SOURCE_ROOT; };
+		919A1B58F8D589708390F312 /* maxiAtoms.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = maxiAtoms.cpp; path = ../../../../openFrameworks/addons/ofxMaxim/libs/maxiAtoms.cpp; sourceTree = SOURCE_ROOT; };
+		97610F7705DF6FC1B67FB67B /* sineTable.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = sineTable.h; path = ../../../../openFrameworks/addons/ofxMaxim/libs/sineTable.h; sourceTree = SOURCE_ROOT; };
+		9F13C3FDBB04EB607F024C70 /* fft.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = fft.h; path = ../../../../openFrameworks/addons/ofxMaxim/libs/fft.h; sourceTree = SOURCE_ROOT; };
+		A8298F1957221E8DE107EAB4 /* maximilian.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = maximilian.cpp; path = ../../../../openFrameworks/addons/ofxMaxim/libs/maximilian.cpp; sourceTree = SOURCE_ROOT; };
+		A8780A1B1B45952600E99A94 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ScriptSynth/Images.xcassets; sourceTree = "<group>"; };
+		A97A7F7E8DF3886E1A303535 /* maxiAtoms.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = maxiAtoms.h; path = ../../../../openFrameworks/addons/ofxMaxim/libs/maxiAtoms.h; sourceTree = SOURCE_ROOT; };
+		B8C57157B49C554BD4E9CA73 /* maxiFFT.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = maxiFFT.cpp; path = ../../../../openFrameworks/addons/ofxMaxim/libs/maxiFFT.cpp; sourceTree = SOURCE_ROOT; };
+		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../../openFrameworks/libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E4B69B5B0A3A1756003C02F2 /* ScriptSynthDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScriptSynthDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
 		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
 		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
 		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
-		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../openFrameworks/libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
+		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../../openFrameworks/libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
 		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
-		E6F49C2FD88DDF091B599955 /* maximilian.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = maximilian.h; path = ../../../openFrameworks/addons/ofxMaxim/libs/maximilian.h; sourceTree = SOURCE_ROOT; };
-		FC6F9137FA7EC92DEED7B861 /* maxiGrains.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = maxiGrains.cpp; path = ../../../openFrameworks/addons/ofxMaxim/libs/maxiGrains.cpp; sourceTree = SOURCE_ROOT; };
+		F4D9B1BF8C8A94ABDDC3AFEE /* stb_vorbis.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = stb_vorbis.h; path = ../../../../openFrameworks/addons/ofxMaxim/libs/stb_vorbis.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,21 +92,21 @@
 		4ACC32F17B7623DA048865D1 /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				544AAA821451623BD53B2040 /* fft.cpp */,
-				AFD20231F56340DFA3AF0D62 /* fft.h */,
-				8D3689C8C7F2585E1AB050D6 /* maxiAtoms.cpp */,
-				003884F4A6C65DCEED679EB5 /* maxiAtoms.h */,
-				2DE8EFAF24106AE2589236E8 /* maxiFFT.cpp */,
-				D0C55A38BBE7A0ADC0BF9841 /* maxiFFT.h */,
-				FC6F9137FA7EC92DEED7B861 /* maxiGrains.cpp */,
-				AE049472FA96B7F13DC959F3 /* maxiGrains.h */,
-				CB1110C1B4E3177C62F6071F /* maxiMFCC.cpp */,
-				50663789A789CFE16D024317 /* maxiMFCC.h */,
-				9FF354E65E84585FB758EAB6 /* maximilian.cpp */,
-				E6F49C2FD88DDF091B599955 /* maximilian.h */,
-				D5965F3A596CBAE27E395B40 /* sineTable.h */,
-				2B5D7123BFF1615BB0DD98F6 /* stb_vorbis.c */,
-				03DAD8D9409CB9513CF5A52A /* stb_vorbis.h */,
+				05A1EF6ADEE7F888AF520F73 /* fft.cpp */,
+				9F13C3FDBB04EB607F024C70 /* fft.h */,
+				919A1B58F8D589708390F312 /* maxiAtoms.cpp */,
+				A97A7F7E8DF3886E1A303535 /* maxiAtoms.h */,
+				B8C57157B49C554BD4E9CA73 /* maxiFFT.cpp */,
+				4B8759F20DB1BE805334F725 /* maxiFFT.h */,
+				813997CD2B9EC6849FF18A31 /* maxiGrains.cpp */,
+				7FE3C35539CCE66D0B56AF6A /* maxiGrains.h */,
+				0A82AB3DA6187F91924D58ED /* maxiMFCC.cpp */,
+				509E168427F5ACB33D00EA68 /* maxiMFCC.h */,
+				A8298F1957221E8DE107EAB4 /* maximilian.cpp */,
+				1E318E69ADB9397C4463818E /* maximilian.h */,
+				97610F7705DF6FC1B67FB67B /* sineTable.h */,
+				410A21A000CC72344E1632E7 /* stb_vorbis.c */,
+				F4D9B1BF8C8A94ABDDC3AFEE /* stb_vorbis.h */,
 			);
 			name = libs;
 			sourceTree = "<group>";
@@ -121,7 +123,7 @@
 		8F6BFB59AB6D0A458C2F3C53 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				5EBDCC43E186C8F718B4A009 /* ofxMaxim.h */,
+				4C139CA6ECEB62D7B53D5E0E /* ofxMaxim.h */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -145,12 +147,13 @@
 		E4B69B4A0A3A1720003C02F2 = {
 			isa = PBXGroup;
 			children = (
+				A8780A1B1B45952600E99A94 /* Images.xcassets */,
 				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
 				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
 				E4B69E1C0A3A1BDC003C02F2 /* src */,
 				E4EEC9E9138DF44700A80321 /* openFrameworks */,
 				BB4B014C10F69532006C3DED /* addons */,
-				E4B69B5B0A3A1756003C02F2 /* scriptSynthMacDebug.app */,
+				E4B69B5B0A3A1756003C02F2 /* ScriptSynthDebug.app */,
 			);
 			sourceTree = "<group>";
 		};
@@ -176,23 +179,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E4B69B5A0A3A1756003C02F2 /* scriptSynth */ = {
+		E4B69B5A0A3A1756003C02F2 /* ScriptSynth */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "scriptSynth" */;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "ScriptSynth" */;
 			buildPhases = (
 				E4B69B580A3A1756003C02F2 /* Sources */,
 				E4B69B590A3A1756003C02F2 /* Frameworks */,
 				E4B6FFFD0C3F9AB9008CF71C /* ShellScript */,
 				E4C2427710CC5ABF004149E2 /* CopyFiles */,
+				A8780A1C1B4595A100E99A94 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				E4EEB9AC138B136A00A80321 /* PBXTargetDependency */,
 			);
-			name = scriptSynth;
+			name = ScriptSynth;
 			productName = myOFApp;
-			productReference = E4B69B5B0A3A1756003C02F2 /* scriptSynthMacDebug.app */;
+			productReference = E4B69B5B0A3A1756003C02F2 /* ScriptSynthDebug.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -203,7 +207,7 @@
 			attributes = {
 				LastUpgradeCheck = 0600;
 			};
-			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "scriptSynth" */;
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "ScriptSynth" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -224,7 +228,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				E4B69B5A0A3A1756003C02F2 /* scriptSynth */,
+				E4B69B5A0A3A1756003C02F2 /* ScriptSynth */,
 			);
 		};
 /* End PBXProject section */
@@ -239,6 +243,17 @@
 		};
 /* End PBXReferenceProxy section */
 
+/* Begin PBXResourcesBuildPhase section */
+		A8780A1C1B4595A100E99A94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8780A1D1B4595A600E99A94 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXShellScriptBuildPhase section */
 		E4B6FFFD0C3F9AB9008CF71C /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -251,7 +266,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cp -f ../../../openFrameworks/libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/libfmodex.dylib\"; install_name_tool -change ./libfmodex.dylib @executable_path/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\nmkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\nmkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/data/\"\n\ncp -r bin/data \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources\";\ncp -f \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n";
+			shellScript = "rsync -aved ../../../../openFrameworks/libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/\"; install_name_tool -change ./libfmodex.dylib @executable_path/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\n\nmkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\ncp -r bin/data \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n\nrsync -aved \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\nrsync -aved ../../../../openFrameworks/libs/glut/lib/osx/GLUT.framework \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Frameworks/\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -262,13 +277,13 @@
 			files = (
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
-				0B8D89AB48122311B93D91A6 /* fft.cpp in Sources */,
-				33F9023993014C499210836F /* maxiAtoms.cpp in Sources */,
-				BE670F62749AAC95920E317F /* maxiFFT.cpp in Sources */,
-				2F96571A277E0F48A3E9A085 /* maxiGrains.cpp in Sources */,
-				BCB5089D4361D1BE5D430A08 /* maxiMFCC.cpp in Sources */,
-				850315DF2F561B95D8133952 /* maximilian.cpp in Sources */,
-				56C0019531F823BC163D9BF0 /* stb_vorbis.c in Sources */,
+				2A95538B06B0C570B4B23703 /* fft.cpp in Sources */,
+				2CFB370FCD7FB221006262D4 /* maxiAtoms.cpp in Sources */,
+				F3A177C56696F6211A0673F1 /* maxiFFT.cpp in Sources */,
+				3D780B90416345AA3F935B38 /* maxiGrains.cpp in Sources */,
+				60E12B84339A80C82C5949E6 /* maxiMFCC.cpp in Sources */,
+				F301ADA1FC9294BEA6D647C0 /* maximilian.cpp in Sources */,
+				BE710F5A03670182318E4071 /* stb_vorbis.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +302,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
@@ -305,17 +319,16 @@
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
-					../../../openFrameworks/addons/libs,
-					../../../openFrameworks/addons/src,
+					../../../../openFrameworks/addons/addons/libs,
+					../../../../openFrameworks/addons/addons/src,
+					../../../../openFrameworks/addons/ofxMaxim/libs,
+					../../../../openFrameworks/addons/ofxMaxim/src,
 					src,
-					../../../openFrameworks/addons/ofxMaxim/libs,
-					../../../openFrameworks/addons/ofxMaxim/src,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-D__MACOSX_CORE__",
-					"-lpthread",
 					"-mtune=native",
 				);
 				SDKROOT = macosx;
@@ -326,7 +339,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
@@ -345,16 +357,15 @@
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
-					../../../openFrameworks/addons/libs,
-					../../../openFrameworks/addons/src,
+					../../../../openFrameworks/addons/addons/libs,
+					../../../../openFrameworks/addons/addons/src,
+					../../../../openFrameworks/addons/ofxMaxim/libs,
+					../../../../openFrameworks/addons/ofxMaxim/src,
 					src,
-					../../../openFrameworks/addons/ofxMaxim/libs,
-					../../../openFrameworks/addons/ofxMaxim/src,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_CPLUSPLUSFLAGS = (
 					"-D__MACOSX_CORE__",
-					"-lpthread",
 					"-mtune=native",
 				);
 				SDKROOT = macosx;
@@ -363,57 +374,74 @@
 		};
 		E4B69B600A3A1757003C02F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../openFrameworks/libs/glut/lib/osx\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../../openFrameworks/libs/glut/lib/osx\"";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = NONE;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../../openFrameworks/addons/addons/libs,
+					../../../../openFrameworks/addons/addons/src,
+					../../../../openFrameworks/addons/ofxMaxim/libs,
+					../../../../openFrameworks/addons/ofxMaxim/src,
+					src,
+				);
 				ICON = "$(ICON_NAME_DEBUG)";
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_NAME = scriptSynthDebug;
+				PRODUCT_NAME = "$(TARGET_NAME)Debug";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		E4B69B610A3A1757003C02F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
 				);
-				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../openFrameworks/libs/glut/lib/osx\"";
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../../openFrameworks/libs/glut/lib/osx\"";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_MODEL_TUNING = NONE;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../../openFrameworks/addons/addons/libs,
+					../../../../openFrameworks/addons/addons/src,
+					../../../../openFrameworks/addons/ofxMaxim/libs,
+					../../../../openFrameworks/addons/ofxMaxim/src,
+					src,
+				);
 				ICON = "$(ICON_NAME_RELEASE)";
 				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
 				INFOPLIST_FILE = "openFrameworks-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_NAME = scriptSynth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
+				baseConfigurationReference = E4EB6923138AFD0F00A09F29;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "scriptSynth" */ = {
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "ScriptSynth" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4B69B4E0A3A1720003C02F2 /* Debug */,
@@ -422,7 +450,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "scriptSynth" */ = {
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "ScriptSynth" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4B69B600A3A1757003C02F2 /* Debug */,
