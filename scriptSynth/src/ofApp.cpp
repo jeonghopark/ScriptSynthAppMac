@@ -105,6 +105,13 @@ void ofApp::draw() {
 }
 
 
+void ofApp::exit(){
+    
+    std::exit(0);
+    
+}
+
+
 float powFreq(float i) {
 	return powf(i, 3);
 }
